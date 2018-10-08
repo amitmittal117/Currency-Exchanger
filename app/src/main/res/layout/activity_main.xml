@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etunit"
+        android:paddingTop="20sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:hint="Units"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etfrom"
+        android:layout_below="@+id/etunit"
+        android:paddingTop="20sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:hint="1 unit of this (eg USD,INR)"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etfrom"
+        android:id="@+id/etto"
+        android:paddingTop="20sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:hint="is equal to x unit of this (eg EUR,CAD)"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exchange"
+        android:padding="15sp"
+        android:layout_below="@+id/etto"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/button"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:id="@+id/fetcheddata"
+            android:padding="5dp"
+            android:textSize="24sp"
+            android:hint="Fetched Text Here!!!"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fetcheddata"
+        android:id="@+id/fetcheddataparsed"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:hint="Fetched Text after Parse Here!!!"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fetcheddataparsed"
+        android:id="@+id/fetched_url"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:hint="Fetched URL after Parse Here!!!"
+    />
+</RelativeLayout>
